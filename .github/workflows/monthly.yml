@@ -1,0 +1,30 @@
+name: Monthly Issue and Stars Update
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+jobs:
+  update-stars:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.24'
+
+    - name: Update stars and regenerate
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        go run cmd/generate/main.go -update-stars
+
+    - name: Create Pull Request or Commit
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git diff --exit-code || (git commit -am "Automated monthly stars update" && git push)

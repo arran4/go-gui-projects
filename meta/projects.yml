@@ -1,0 +1,653 @@
+- title_en: native GUI and utility bindings
+  title_zh: 本机 GUI 和实用程序绑定
+  items:
+  - desc_en: '(old name: MacDriver) lets you work with Apple frameworks and build
+      native Mac applications using Go.'
+    name: DarwinKit
+    stars: 0
+    type: project
+    url: https://github.com/progrium/darwinkit
+  - desc_en: is a cross-platform library for displaying dialogs and input boxes.
+    desc_zh: 是一个用于显示对话框和输入框的跨平台库。
+    name: dlgs
+    stars: 0
+    type: project
+    url: https://github.com/gen2brain/dlgs
+  - desc_en: is cross-platform GUI window creation and management library in Go.
+    desc_zh: 是 Go 语言跨平台的 GUI 窗口创建和管理库。
+    name: gamen
+    stars: 0
+    type: project
+    url: https://github.com/rajveermalviya/gamen
+  - desc_en: is an easy to use Windows GUI toolkit for Go.
+    desc_zh: 是一个易于使用的 Go Windows GUI 工具包。
+    name: gform
+    stars: 0
+    sub_projects:
+    - desc_en: is a common library for Go GUI apps on Windows (based on gform).
+      desc_zh: 是 Windows 上 Go GUI 应用程序的通用库（基于 gform）。
+      name: winc
+      stars: 0
+      type: ''
+      url: https://github.com/tadvi/winc
+    type: project
+    url: https://github.com/AllenDang/gform
+  - desc_en: is a Go bindings for GLFW 3.
+    desc_zh: 是 GLFW 3 的 Go 绑定。
+    name: glfw
+    stars: 0
+    type: project
+    url: https://github.com/go-gl/glfw
+  - desc_en: is a simple wrapper around [FLTK 1.4 library](https://www.fltk.org/),
+      which is a lightweight GUI library which allows creating small, self-contained
+      and fast gui applications.
+    desc_zh: 是一个简单的包装器 [FLTK 1.4 library](https://www.fltk.org/), 它是一个轻量级的 GUI 库，允许创建小型、独立且快速的
+      GUI 应用程序。
+    name: go-fltk
+    stars: 0
+    type: project
+    url: https://github.com/pwiecz/go-fltk
+  - desc_en: adds support for mobile platforms (Android and iOS) and provides tools
+      to build mobile applications. (A [Go bindings for OpenGL ES 2.0 and ES 3.0](https://godoc.org/golang.org/x/mobile/gl)
+      is included.)
+    desc_zh: 增加了对移动平台（Android 和 iOS）的支持，并提供了构建移动应用程序的工具。(包括[Go bindings for OpenGL
+      ES 2.0 and ES 3.0](https://godoc.org/golang.org/x/mobile/gl))
+    name: go-mobile
+    stars: 0
+    type: project
+    url: https://github.com/golang/mobile
+  - desc_en: is a Go bindings for [SFML](https://www.sfml-dev.org/).
+    desc_zh: 是 [SFML](https://www.sfml-dev.org/)的 Go 绑定。
+    name: go-sfml
+    stars: 0
+    type: project
+    url: https://github.com/teh-cmc/go-sfml
+  - desc_en: is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
+    desc_zh: 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
+    name: GoVCL
+    stars: 0
+    type: project
+    url: https://github.com/ying32/govcl
+  - header_en: 'GTK related:'
+    header_zh: 'GTK 相关:'
+    projects:
+    - desc_en: 'is a Go binding for GTK2. * Another one: [gobbi](https://github.com/pekim/gobbi)
+        (including [cairo](https://github.com/pekim/gobbi/tree/master/lib/cairo)).'
+      desc_zh: 是 GTK2 的 Go 绑定。
+      name: go-gtk
+      stars: 0
+      sub_projects:
+      - desc_en: provides Go bindings for GTK+3 and dependent projects (including
+          [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)).
+        desc_zh: '为 GTK+3 和​​相关项目 (包括 [cairo](https://github.com/gotk3/gotk3/tree/master/cairo))
+          提供 Go 绑定。 * 另外一个: [gobbi](https://github.com/pekim/gobbi) (包括 [cairo](https://github.com/pekim/gobbi/tree/master/lib/cairo))。'
+        name: gotk3
+        stars: 0
+        type: ''
+        url: https://github.com/gotk3/gotk3
+      - desc_en: is a GTK4 bindings generator for Go.
+        desc_zh: 是 Go 的 GTK4 绑定生成器。
+        name: gotk4
+        stars: 0
+        type: ''
+        url: https://github.com/diamondburned/gotk4
+      type: ''
+      url: https://github.com/mattn/go-gtk
+    - desc_en: is a Go cross platform UI library.
+      desc_zh: 是一个 Go 跨平台 UI 库。
+      name: GXUI
+      stars: 0
+      type: ''
+      url: https://github.com/google/gxui
+    - desc_en: is a Go bindings for [IUP](https://www.tecgraf.puc-rio.br/iup/).
+      desc_zh: 是 [IUP](https://www.tecgraf.puc-rio.br/iup/)的 Go 绑定
+      name: iup-go
+      stars: 0
+      type: ''
+      url: https://github.com/gen2brain/iup-go
+    - desc_en: is a cross-platform GUI library to make macOS, window, linux, IOS,
+        android applications.
+      desc_zh: 是一个跨平台的 GUI 库，用于制作 macOS、window、linux、IOS、android 应用程序。
+      name: nuxui
+      stars: 0
+      type: ''
+      url: https://github.com/nuxui/nuxui
+    type: group
+  - header_en: 'QT related:'
+    header_zh: 'QT 相关:'
+    projects:
+    - desc_en: is a MIT-licensed Qt bindings for Go.
+      name: miqt
+      stars: 0
+      sub_projects:
+      - desc_en: is a simple QML binding for Go (MIT license)
+        name: Qamel
+        stars: 0
+        type: ''
+        url: https://github.com/go-qamel/qamel
+      - desc_en: allows you to write Qt applications entirely in Go and makes deploying
+          them later very easy (LGPL license).
+        desc_zh: 允许您完全用 Go 编写 Qt 应用程序，并使以后部署它们变得非常容易。
+        name: qt
+        stars: 0
+        type: ''
+        url: https://github.com/therecipe/qt
+      - desc_en: is a Qt5 binding which uses FFI instead of CGO (LGPL license).
+        desc_zh: 是 Qt5 绑定，它使用 FFI 而不是 CGO。
+        name: qt.go
+        stars: 0
+        type: ''
+        url: https://github.com/kitech/qt.go
+      type: ''
+      url: https://github.com/mappu/miqt
+    - desc_en: is an easy Go GUI wrapper for interactive manipulation of visual algorithms/backend
+        code. Support go-gtk (default), gotk3 and shiny backends.
+      desc_zh: 是一个简单的 Go GUI 包装器，用于交互式操作可视化算法/后端代码。支持 go-gtk（默认）、gotk3 和 shiny 后端。
+      name: RenderView
+      stars: 0
+      type: ''
+      url: https://github.com/TheGrum/renderview
+    type: group
+  - header_en: 'SDL related:'
+    header_zh: 'SDL 相关:'
+    projects:
+    - desc_en: is SDL2 wrapped for Go users.
+      desc_zh: 是专为 Go 用户包装的 SDL2。
+      name: go-sdl2
+      stars: 0
+      sub_projects:
+      - desc_en: is a cgo-free SDL3 binding.
+        name: purego-sdl3
+        stars: 0
+        type: ''
+        url: https://github.com/JupiterRider/purego-sdl3
+      type: ''
+      url: https://github.com/veandco/go-sdl2
+    - desc_en: is a Go cross platform UI package.
+      desc_zh: 是一个 Go 跨平台 UI 包。
+      name: shiny
+      stars: 0
+      type: ''
+      url: https://github.com/golang/exp/tree/master/shiny
+    - desc_en: is a reactive, cross-platform desktop GUI toolkit.
+      desc_zh: 是一个反应灵敏的跨平台桌面 GUI 工具包。
+      name: Spot
+      stars: 0
+      type: ''
+      url: https://github.com/roblillack/spot
+    - desc_en: is a cross platfrom Go library to place an icon and menu in the notification
+        area. Tested on Windows 8, Mac OSX, Ubuntu 14.10 and Debian 7.6.
+      desc_zh: 是一个跨平台的 Go 库，用于在通知区域放置图标和菜单。已在 Windows 8、Mac OSX、Ubuntu 14.10 和 Debian
+        7.6 上测试。
+      name: systray
+      stars: 0
+      type: ''
+      url: https://github.com/getlantern/systray
+    type: group
+  - header_en: 'Tcl/Tk related:'
+    header_zh: 'Tcl/Tk 相关:'
+    projects:
+    - desc_en: is a tcl/tk binding.
+      desc_zh: 是 tcl/tk 的 Go 绑定。
+      name: gothic
+      stars: 0
+      sub_projects:
+      - desc_en: is a CGo-free (use dynamic lib loading instead), cross platform GUI
+          toolkit for Go.
+        name: tk9.0
+        stars: 0
+        type: ''
+        url: https://gitlab.com/cznic/tk9.0
+      type: ''
+      url: https://github.com/nsf/gothic
+    - desc_en: is a cross-platform Go library to place an icon in the host operating
+        system's taskbar.
+      desc_zh: 是一个跨平台的 Go 库，用于在主机操作系统的任务栏中放置图标。
+      name: trayhost
+      stars: 0
+      type: ''
+      url: https://github.com/shurcooL/trayhost
+    - desc_en: aims to provide simple GUI software development in Go, based on my
+        c lib [libui](https://github.com/andlabs/libui).
+      desc_zh: 旨在使用 c 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
+      name: ui
+      stars: 0
+      type: ''
+      url: https://github.com/andlabs/ui
+    - desc_en: is a simple example on show to create Windows GUI by using the `syscall`
+        package.
+      desc_zh: 是一个简单的示例，展示了如何使用syscall包创建 Windows GUI。
+      name: w32.go
+      stars: 0
+      type: ''
+      url: https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3
+    - desc_en: '- Win32 API and GUI in idiomatic Go.'
+      desc_zh: 采用 Go 编写的 Win32 API 和 GUI。
+      name: Windigo
+      stars: 0
+      type: ''
+      url: https://github.com/rodrigocfd/windigo
+    - desc_en: is a "Windows Application Library Kit" for the Go Programming Language.
+      desc_zh: 是 Go 编程的“Windows 应用程序库套件”。
+      name: Walk
+      stars: 0
+      type: ''
+      url: https://github.com/lxn/walk
+    - desc_en: is a Windows GUI library that uses [the native Win32 API](https://github.com/gonutz/w32),
+        which is forked from [this one](https://github.com/AllenDang/w32).
+      desc_zh: 是一个使用 [the native Win32 API](https://github.com/gonutz/w32)的 Windows
+        GUI 库, 它是 [this one](https://github.com/AllenDang/w32)分叉而来的.
+      name: wui
+      stars: 0
+      type: ''
+      url: https://github.com/gonutz/wui
+    - desc_en: is the X Go Binding, which is a low-level API to communicate with the
+        core X protocol and many of the X extensions.
+      desc_zh: 是 X 的 Go 绑定，它是用于与核心 X 协议和许多 X 扩展进行通信的低级 API。
+      name: XGB
+      stars: 0
+      type: ''
+      url: https://github.com/BurntSushi/xgb
+    - desc_en: is a utility library designed to work with the X Go Binding.
+      desc_zh: 是一个旨在与[XGB](https://github.com/BurntSushi/xgb)配合使用的实用程序库。
+      name: xgbutil
+      stars: 0
+      type: ''
+      url: https://github.com/BurntSushi/xgbutil
+    - desc_en: is a cross-platform package providing [Zenity](https://help.gnome.org/users/zenity/stable/)-like
+        dialogs.
+      desc_zh: 是一个跨平台包，提供类似[Zenity](https://help.gnome.org/users/zenity/stable/)的对话框。
+      name: zenity
+      stars: 0
+      type: ''
+      url: https://github.com/ncruces/zenity
+    type: group
+- title_en: HTML based GUI
+  title_zh: 基于 HTML 的 GUI
+  items:
+  - desc_en: gives you webview windows and common platform APIs for your simple scripts,
+      homebrew utilities, or full applications.
+    name: Apptron
+    stars: 0
+    type: project
+    url: https://github.com/tractordev/apptron
+  - desc_en: is a package for building progressive web apps (PWA) with the Go programming
+      language (Golang) and WebAssembly (Wasm).
+    desc_zh: 是一个使用 Go 编程语言（Golang）和 WebAssembly（Wasm）构建渐进式 Web 应用程序（PWA）的软件包。
+    name: Go-app
+    stars: 0
+    type: project
+    url: https://github.com/maxence-charriere/go-app
+  - desc_en: helps use build cross platform GUI apps with GO and HTML/JS/CSS. It is
+      the official GO bindings of astilectron and is powered by Electron.
+    desc_zh: 帮助使用 GO 和 HTML/JS/CSS 构建跨平台 GUI 应用程序。它是 astilectron 的官方 GO 绑定，由 Electron
+      提供支持。
+    name: go-astilectron
+    stars: 0
+    type: project
+    url: https://github.com/asticode/go-astilectron
+  - desc_en: 'is a Golang bindings of Sciter: the Embeddable HTML/CSS/script engine
+      for modern UI development。'
+    desc_zh: 是 Sciter 的 Golang 绑定：用于现代 UI 开发的可嵌入 HTML/CSS/脚本引擎。
+    name: go-sciter
+    stars: 0
+    type: project
+    url: https://github.com/sciter-sdk/go-sciter
+  - desc_en: help us build cross platform GUI apps with GO and HTML/JS/CSS (powered
+      by nwjs)。
+    desc_zh: 帮助我们使用 GO 和 HTML/JS/CSS (由 nwjs 提供支持) 构建跨平台 GUI 应用程序。
+    name: gowd
+    stars: 0
+    type: project
+    url: https://github.com/dtylman/gowd
+  - desc_en: is a Web UI Toolkit written in pure Go. Apps are rendered as HTML pages.
+      It doesn't bundle browsers.
+    desc_zh: 是一个纯 Go 编写的 Web UI 工具包。应用程序以 HTML 页面的形式呈现。它不捆绑浏览器。
+    name: Gowut
+    stars: 0
+    type: project
+    url: https://github.com/icza/gowut
+  - desc_en: is a very small library to build modern HTML5 desktop apps in Go. It
+      doesn't bundle Chrome but reuses the installed Chrome on your machine.
+    desc_zh: 是一个非常小的库，用于用 Go 构建现代 HTML5 桌面应用。它不捆绑 Chrome，但会重复使用您机器上已安装的 Chrome。
+    name: Lorca
+    stars: 0
+    type: project
+    url: https://github.com/zserge/lorca
+  - desc_en: is a lightweight alternative to Electron written in Golang, using [Ultralight](https://ultralig.ht/)
+      instead of Chromium.
+    desc_zh: 是 Electron 的轻量级替代品，用 Golang 编写，使用[Ultralight](https://ultralig.ht/)而不是
+      Chromium。
+    name: Muon
+    stars: 0
+    type: project
+    url: https://github.com/ImVexed/muon
+  - desc_en: is a lightweight alternative to Electron written in Golang. Apps are
+      rendered as HTML pages. It doesn't bundle browsers.
+    desc_zh: 是使用 Golang 编写的 Electron 的轻量级替代品。应用程序以 HTML 页面的形式呈现。它不捆绑浏览器。
+    name: Qlovaseed
+    stars: 0
+    type: project
+    url: https://github.com/qlova/seed
+  - desc_en: is a framework for building desktop applications using Go & Web Technologies.
+    desc_zh: 是一个使用 Go 和 Web 技术构建桌面应用程序的框架。
+    name: Wails
+    stars: 0
+    type: project
+    url: https://github.com/wailsapp/wails
+  - desc_en: is a tiny cross-platform webview library for C/C++/Golang to build modern
+      cross-platform GUIs.
+    desc_zh: 是一个小型跨平台 webview 库，用于 C/C++/Golang 构建现代跨平台 GUI。
+    name: webview
+    stars: 0
+    type: project
+    url: https://github.com/webview/webview
+- title_en: custom GUI
+  title_zh: 自定义 GUI
+  items:
+  - desc_en: is a free and open source framework for building powerful, fast, elegant
+      2D and 3D apps that run on macOS, Windows, Linux, iOS, Android, and the web.
+    name: Cogent Core
+    stars: 0
+    type: project
+    url: https://github.com/cogentcore/core
+  - desc_en: is a pure go, cross-platform, MIT-licensed ui toolkit for developers.
+    desc_zh: 是一个纯 go、跨平台、MIT 许可的开发人员 UI 工具包。
+    name: duit
+    stars: 0
+    type: project
+    url: https://github.com/mjl-/duit
+  - desc_en: is an easy to use UI toolkit and app API written in Go. We use OpenGL
+      (through the go-gl and go-glfw projects) to provide cross platform graphics.
+    desc_zh: 是一个用 Go 编写的易于使用的 UI 工具包和应用程序 API。我们使用 OpenGL（通过 go-gl 和 go-glfw 项目）来提供跨平台图形。
+    name: Fyne
+    stars: 0
+    type: project
+    url: https://github.com/fyne-io/fyne
+  - desc_en: 'implements portable immediate mode GUI programs in Go. Gio programs
+      run on all the major platforms: iOS/tvOS, Android, Linux (Wayland), macOS, Windows
+      and browsers (Webassembly/WebGL).'
+    desc_zh: 使用 Go 语言实现了可移植的立即模式 GUI 程序。Gio 程序可在所有主流平台上运行：iOS/tvOS、Android、Linux (Wayland)、macOS、Windows
+      和浏览器 (Webassembly/WebGL)。
+    name: Gio
+    stars: 0
+    type: project
+    url: https://git.sr.ht/~eliasnaur/gio
+  - desc_en: provides a declarative, cross-platform GUI for the Go language. The range
+      of controls, their supported properties and events, should roughly match what
+      is available in HTML. However, properties and events may be limited to support
+      portability. Additionally, styling of the controls will be limited, with the
+      look of controls matching the native platform.
+    desc_zh: 为 Go 语言提供了声明式、跨平台的 GUI。控件的范围及其支持的属性和事件应与 HTML 中提供的大致相同。但是，属性和事件可能会受到限制以支持可移植性。此外，控件的样式将受到限制，控件的外观与本机平台相匹配。
+    name: goey
+    stars: 0
+    type: project
+    url: https://bitbucket.org/rj/goey
+  - desc_en: is a package that brings Flutter to the desktop.
+    desc_zh: 是一个将 Flutter 应用到桌面的包。
+    name: go-flutter
+    stars: 0
+    type: project
+    url: https://github.com/go-flutter-desktop/go-flutter
+  - desc_en: provides super minimal, rock-solid foundation for concurrent GUI in Go.
+    desc_zh: 为 Go 中的并发 GUI 提供了极简、坚如磐石的基础。
+    name: gui
+    stars: 0
+    type: project
+    url: https://github.com/faiface/gui
+  - desc_en: is a Go wrapper for Dear ImGui.
+    desc_zh: 是 Dear ImGui 的 Go 包装器。
+    name: imgui-go
+    stars: 0
+    sub_projects:
+    - desc_en: is a GUI framework based on imgui-go. (Another similar one from the
+        same auther, [gimu](https://github.com/AllenDang/gimu), but for nucular.)
+      desc_zh: 是一个基于 imgui-go 的 GUI 框架。（另一个类似的框架来自同一作者， [gimu](https://github.com/AllenDang/gimu)，但适用于
+        nucular。）
+      name: giu
+      stars: 0
+      type: ''
+      url: https://github.com/AllenDang/giu
+    type: project
+    url: https://github.com/inkyblackness/imgui-go
+  - desc_en: is a Go port of the tiny immediate-mode UI library [microui](https://github.com/rxi/microui).
+    name: microui-go
+    stars: 0
+    type: project
+    url: https://github.com/zeozeozeo/microui-go
+  - desc_en: is a golang port of [NanoGUI](https://github.com/wjakob/nanogui).
+    desc_zh: 是 [NanoGUI](https://github.com/wjakob/nanogui) 的 Go 端口
+    name: NanoGUI.go
+    stars: 0
+    type: project
+    url: https://github.com/shibukawa/nanogui-go
+  - desc_en: 'provides Go bindings for nuklear.h. * Another one: [nucular](https://github.com/aarzilli/nucular),
+      which uses gio or shiny backend instead of cgo.'
+    desc_zh: '为 nuklear.h 提供 Go 绑定。 * 另一个: [nucular](https://github.com/aarzilli/nucular)，它使用
+      gio 或 shiny 后端而不是 cgo。'
+    name: nk
+    stars: 0
+    type: project
+    url: https://github.com/golang-ui/nuklear
+  - desc_en: is a unified graphical user experience toolkit for Go desktop applications.
+      macOS, Windows, and Linux are supported. Unison is built upon glfw. Unison defines
+      its own look and feel for widgets. This was done to provide as much consistency
+      as possible between all supported platforms.
+    desc_zh: 是用于 Go 桌面应用程序的统一图形用户体验工具包。支持 macOS、Windows 和 Linux。Unison 建立在 glfw 之上。Unison
+      为小部件定义了自己的外观和感觉。这样做是为了在所有支持的平台之间提供尽可能高的一致性。
+    name: Unison
+    stars: 0
+    type: project
+    url: https://github.com/richardwilkes/unison
+- title_en: 3D graphics and computing API bindings
+  title_zh: 3D 图形和计算 API 绑定
+  items:
+  - desc_en: is a pure Go wrapper for Microsoft's Direct3D9 API.
+    desc_zh: 是 Microsoft Direct3D9 API 的纯 Go 包装器。
+    name: d3d9
+    stars: 0
+    type: project
+    url: https://github.com/gonutz/d3d9
+  - desc_en: repository holds Go bindings to various OpenGL versions. They are auto-generated
+      using Glow. * And [GLHF](https://github.com/faiface/glhf), a gl3.3 wrapper.
+      * And the above mentioned [OpenGL ES 2.0 and ES 3.0 bindings](https://godoc.org/golang.org/x/mobile/gl)
+      from the go-mobile project. * Also the OpenGL ES implemention in the [android-go](https://github.com/xlab/android-go)
+      project.
+    desc_zh: 存储库包含 Go 与各种 OpenGL 版本的绑定。它们是使用 Glow 自动生成的。 * 还有 [GLHF](https://github.com/faiface/glhf)，一个
+      gl3.3 包装器。 * 还有上面提到的来自 go-mobile 项目的[OpenGL ES 2.0 and ES 3.0 bindings](https://godoc.org/golang.org/x/mobile/gl)
+      * 还有 [android-go](https://github.com/xlab/android-go) 项目中的 OpenGL ES 实现。
+    name: gl
+    stars: 0
+    type: project
+    url: https://github.com/go-gl/gl
+  - desc_en: 'provides Go bindings for Vulkan — a low-overhead, cross-platform 3D
+      graphics and compute API. * Another one: [vkngwrapper](https://github.com/vkngwrapper)
+      * And another one: [go-vk](https://github.com/bbredesen/go-vk)'
+    desc_zh: '为 Vulkan 提供 Go 绑定——一种低开销、跨平台的 3D 图形和计算 API。 * 另一个: [vkngwrapper](https://github.com/vkngwrapper)
+      * 还有一个: [go-vk](https://github.com/bbredesen/go-vk)'
+    name: vulkan
+    stars: 0
+    type: project
+    url: https://github.com/vulkan-go/vulkan
+- title_en: 2D vector graphics and computing APIs
+  title_zh: 2D矢量图形和计算API
+  items:
+  - desc_en: is a Go 2D vector graphics library with support for multiple outputs
+      such as images (draw2d), pdf documents (draw2dpdf), opengl (draw2dgl) and svg
+      (draw2dsvg).
+    desc_zh: 是一个 Go 2D 矢量图形库，支持多种输出，如图像（draw2d）、pdf 文档（draw2dpdf）、opengl（draw2dgl）和
+      svg（draw2dsvg）。
+    name: draw2d
+    stars: 0
+    type: project
+    url: https://github.com/llgcode/draw2d
+  - desc_en: is a library for rendering 2D graphics in pure Go.
+    desc_zh: 是一个用 Go 渲染 2D 图形的库。
+    name: gg
+    stars: 0
+    type: project
+    url: https://github.com/fogleman/gg
+  - desc_en: is a canvas API built on top of Gio.
+    desc_zh: is a canvas API built on top of Gio.
+    name: giocanvas
+    stars: 0
+    type: project
+    url: https://github.com/ajstarks/giocanvas
+  - desc_en: is a Go binding for the cairo graphics library. * And the above mentioned
+      [the](https://github.com/gotk3/gotk3/tree/master/cairo) [other](https://github.com/pekim/gobbi/tree/master/lib/cairo)
+      [ones](https://github.com/golang-ui/cairo).
+    desc_zh: 是一个基于 Gio 构建的画布 API。 * 以及上面提到的 [gotk3](https://github.com/gotk3/gotk3/tree/master/cairo)
+      [gobbi](https://github.com/pekim/gobbi/tree/master/lib/cairo) [cairo](https://github.com/golang-ui/cairo).
+    name: go-cairo
+    stars: 0
+    type: project
+    url: https://github.com/ungerik/go-cairo
+  - desc_en: is a pure Go library that provides drawing functionality as similar as
+      possible to the HTML5 canvas API, implemented on OpenGL backend (and software
+      backend).
+    desc_zh: 是一个 Go 库，提供与 HTML5 canvas API 尽可能相似的绘图功能，在 OpenGL 后端（和软件后端）上实现。
+    name: Go canvas
+    stars: 0
+    type: project
+    url: https://github.com/tfriedel6/canvas
+  - desc_en: is a very simple golang native charting library that supports timeseries
+      and continuous line charts.
+    desc_zh: 是一个非常简单的 golang 原生图表库，支持时间序列和连续折线图。
+    name: go-chart
+    stars: 0
+    type: project
+    url: https://github.com/wcharczuk/go-chart
+  - desc_en: provides an API for building and drawing plots in Go
+    desc_zh: 提供了用 Go 构建和绘制图表的 API
+    name: gonum/plot
+    stars: 0
+    type: project
+    url: https://github.com/gonum/plot
+  - desc_en: is a simple package that provides primitives resembling the ones exposed
+      by the [p5/processing](https://p5js.org/) library.
+    desc_zh: 是一个简单的包，它提供类似于 [p5/processing](https://p5js.org/) 库公开的原语。
+    name: go-p5
+    stars: 0
+    type: project
+    url: https://github.com/go-p5/p5
+  - desc_en: is a Go skia binding based on skia C library through cgo.
+    desc_zh: 是一个通过 cgo 基于 skia C 库的 Go skia 绑定。
+    name: go-skia
+    stars: 0
+    type: project
+    url: https://github.com/go101/go-skia
+  - desc_en: is pure golang implementation of [NanoVG](https://github.com/memononen/nanovg).
+      The same author maintains the NanoGUI.go project mentioned above.
+    desc_zh: 是 [NanoVG](https://github.com/memononen/nanovg) 的 golang 实现. 同一作者维护着上面提到的
+      NanoGUI.go 项目。
+    name: NanoVGo
+    stars: 0
+    sub_projects:
+    - desc_en: of NanoVG.
+      name: A CGO binding version
+      stars: 0
+      type: ''
+      url: https://github.com/beta/nanovgo
+    type: project
+    url: https://github.com/shibukawa/nanovgo
+  - desc_en: generates SVG as defined by the Scalable Vector Graphics 1.1 Specification.
+    desc_zh: 按照可缩放矢量图形 1.1 规范定义生成 SVG。
+    name: svgo
+    stars: 0
+    type: project
+    url: https://github.com/ajstarks/svgo
+  - text_en: The [Gio](https://git.sr.ht/~eliasnaur/gio) project includes an efficient
+      vector renderer based on [the Pathfinder project](https://github.com/servo/pathfinder),
+      implemented on OpenGL ES and Direct3D 11.
+    text_zh: The [Gio](https://git.sr.ht/~eliasnaur/gio) 项目包括一个基于 [the Pathfinder
+      project](https://github.com/servo/pathfinder)项目的高效矢量渲染器，该渲染器在 OpenGL ES 和 Direct3D
+      11 上实现。
+    type: text
+- title_en: font processing related
+  title_zh: 字体处理相关
+  items:
+  - desc_en: is a Freetype font rasterizer in the Go programming language.
+    desc_zh: 是 Go 编程语言中的 Freetype 字体光栅化器。
+    name: freetype
+    stars: 0
+    type: project
+    url: https://github.com/golang/freetype
+  - desc_en: is a simple, lightweight Pixel Font (aka bitmap fonts) package for Go
+      that works with the standard image/draw package
+    desc_zh: 是一个简单、轻量级的 Go 像素字体（又名位图字体）包，可与标准 image/draw 包配合使用
+    name: pixfont
+    stars: 0
+    type: project
+    url: https://github.com/pbnjay/pixfont
+  - text_en: The [golang.org/x/image/font/sfnt](https://godoc.org/golang.org/x/image/font/sfnt)
+      package parses SFNT font file formats, including TrueType and OpenType.
+    text_zh: 这个[golang.org/x/image/font/sfnt](https://godoc.org/golang.org/x/image/font/sfnt)包解析
+      SFNT 字体文件格式，包括 TrueType 和 OpenType
+    type: text
+- title_en: CAD related
+  title_zh: CAD 相关
+  items:
+  - desc_en: is a simple CAD package written in Go. [sdf](https://github.com/soypat/sdf)
+      is a rewritten of it.
+    desc_zh: 是一个用 Go 编写的简单 CAD 包。 [sdf](https://github.com/soypat/sdf)是它的重写版
+    name: sdfx
+    stars: 0
+    type: project
+    url: https://github.com/deadsy/sdfx
+- title_en: game development related
+  title_zh: game development related
+  items:
+  - desc_en: – A dead simple 2D game library for Golang
+    desc_zh: 一款非常简单的 Golang 2D 游戏库
+    name: ebiten
+    stars: 0
+    sub_projects:
+    - desc_en: '- A UI library on top of ebiten'
+      desc_zh: 基于 ebiten 的 UI 库
+      name: ebitenui
+      stars: 0
+      type: ''
+      url: https://github.com/ebitenui/ebitenui
+    type: project
+    url: https://github.com/hajimehoshi/ebiten
+  - desc_en: '- Go language bindings for the [Godot Engine](https://godotengine.org/)''s
+      [GDNative API](https://github.com/GodotNativeTools/godot_headers).'
+    desc_zh: 是 [Godot Engine](https://godotengine.org/)'s 的 [GDNative API](https://github.com/GodotNativeTools/godot_headers)
+      的 Go 绑定。
+    name: godot-go
+    stars: 0
+    type: project
+    url: https://github.com/ShadowApex/godot-go
+  - desc_en: is a Golang binding for [raylib](https://www.raylib.com).
+    desc_zh: 是 [raylib](https://www.raylib.com) 的 Go 绑定。
+    name: raylib-go
+    stars: 0
+    type: project
+    url: https://github.com/gen2brain/raylib-go
+  - text_en: Please visit [Awesome Go](https://github.com/avelino/awesome-go#game-development)
+      for more.
+    text_zh: 请访问 [Awesome Go](https://github.com/avelino/awesome-go#game-development)
+      以了解更多。
+    type: text
+- title_en: image processing related
+  title_zh: 图像处理相关
+  items:
+  - text_en: The standard Go [image](https://golang.org/pkg/image/) packages.
+    text_zh: 标准的 Go [image](https://golang.org/pkg/image/) 包.
+    type: text
+  - text_en: The [image](https://github.com/golang/image/) repository holds supplementary
+      Go image libraries.
+    text_zh: 请访问 [Awesome Go](https://github.com/avelino/awesome-go#images) 以了解更多。
+    type: text
+  - text_en: Please visit [Awesome Go](https://github.com/avelino/awesome-go#images)
+      for more.
+    text_zh: 顺便说一句，如果您对开发终端 UI Go 程序感兴趣，请查看
+    type: text
+- title_en: terminal UI
+  title_zh: 终端界面
+  items:
+  - text_en: BTW, if you have interests in developing terminal UI Go programs, please
+      check
+    text_zh: BTW, if you have interests in developing terminal UI Go programs, please
+      check
+    type: text
