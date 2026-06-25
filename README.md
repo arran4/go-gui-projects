@@ -8,84 +8,84 @@ _(Please follow [@zigo_101](https://twitter.com/zigo_101) for updates on this pa
 
 ### native GUI and utility bindings
 
+Tcl/Tk related:
+* [ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on my c lib [libui](https://github.com/andlabs/libui).
+* [Walk](https://github.com/lxn/walk) is a "Windows Application Library Kit" for the Go Programming Language.
+* [zenity](https://github.com/ncruces/zenity) is a cross-platform package providing [Zenity](https://help.gnome.org/users/zenity/stable/)-like dialogs.
+* [Windigo](https://github.com/rodrigocfd/windigo) - Win32 API and GUI in idiomatic Go.
+* [XGB](https://github.com/BurntSushi/xgb) is the X Go Binding, which is a low-level API to communicate with the core X protocol and many of the X extensions.
+* [trayhost](https://github.com/shurcooL/trayhost) is a cross-platform Go library to place an icon in the host operating system's taskbar.
+* [wui](https://github.com/gonutz/wui) is a Windows GUI library that uses [the native Win32 API](https://github.com/gonutz/w32), which is forked from [this one](https://github.com/AllenDang/w32).
+* [xgbutil](https://github.com/BurntSushi/xgbutil) is a utility library designed to work with the X Go Binding.
+* [gothic](https://github.com/nsf/gothic) is a tcl/tk binding.
+* [tk9.0](https://gitlab.com/cznic/tk9.0) is a CGo-free (use dynamic lib loading instead), cross platform GUI toolkit for Go.
+* [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) is a simple example on show to create Windows GUI by using the `syscall` package.
+
+[go-mobile](https://github.com/golang/mobile) adds support for mobile platforms (Android and iOS) and provides tools to build mobile applications. (A [Go bindings for OpenGL ES 2.0 and ES 3.0](https://godoc.org/golang.org/x/mobile/gl) is included.)
+
 [DarwinKit](https://github.com/progrium/darwinkit) (old name: MacDriver) lets you work with Apple frameworks and build native Mac applications using Go.
 
-[dlgs](https://github.com/gen2brain/dlgs) is a cross-platform library for displaying dialogs and input boxes.
+GTK related:
+* [GXUI](https://github.com/google/gxui) is a Go cross platform UI library.
+* [go-gtk](https://github.com/mattn/go-gtk) is a Go binding for GTK2. * Another one: [gobbi](https://github.com/pekim/gobbi) (including [cairo](https://github.com/pekim/gobbi/tree/master/lib/cairo)).
+* [gotk3](https://github.com/gotk3/gotk3) provides Go bindings for GTK+3 and dependent projects (including [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)).
+* [gotk4](https://github.com/diamondburned/gotk4) is a GTK4 bindings generator for Go.
+* [nuxui](https://github.com/nuxui/nuxui) is a cross-platform GUI library to make macOS, window, linux, IOS, android applications.
+* [iup-go](https://github.com/gen2brain/iup-go) is a Go bindings for [IUP](https://www.tecgraf.puc-rio.br/iup/).
 
-[gamen](https://github.com/rajveermalviya/gamen) is cross-platform GUI window creation and management library in Go.
+SDL related:
+* [systray](https://github.com/getlantern/systray) is a cross platfrom Go library to place an icon and menu in the notification area. Tested on Windows 8, Mac OSX, Ubuntu 14.10 and Debian 7.6.
+* [go-sdl2](https://github.com/veandco/go-sdl2) is SDL2 wrapped for Go users.
+* [purego-sdl3](https://github.com/JupiterRider/purego-sdl3) is a cgo-free SDL3 binding.
+* [Spot](https://github.com/roblillack/spot) is a reactive, cross-platform desktop GUI toolkit.
+* [shiny](https://github.com/golang/exp/tree/master/shiny) is a Go cross platform UI package.
+
+[GoVCL](https://github.com/ying32/govcl) is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
+
+[glfw](https://github.com/go-gl/glfw) is a Go bindings for GLFW 3.
+
+QT related:
+* [miqt](https://github.com/mappu/miqt) is a MIT-licensed Qt bindings for Go.
+* [qt](https://github.com/therecipe/qt) allows you to write Qt applications entirely in Go and makes deploying them later very easy (LGPL license).
+* [qt.go](https://github.com/kitech/qt.go) is a Qt5 binding which uses FFI instead of CGO (LGPL license).
+* [Qamel](https://github.com/go-qamel/qamel) is a simple QML binding for Go (MIT license)
+* [RenderView](https://github.com/TheGrum/renderview) is an easy Go GUI wrapper for interactive manipulation of visual algorithms/backend code. Support go-gtk (default), gotk3 and shiny backends.
+
+[dlgs](https://github.com/gen2brain/dlgs) is a cross-platform library for displaying dialogs and input boxes.
 
 [gform](https://github.com/AllenDang/gform) is an easy to use Windows GUI toolkit for Go.
 * [winc](https://github.com/tadvi/winc) is a common library for Go GUI apps on Windows (based on gform).
 
-[glfw](https://github.com/go-gl/glfw) is a Go bindings for GLFW 3.
-
 [go-fltk](https://github.com/pwiecz/go-fltk) is a simple wrapper around [FLTK 1.4 library](https://www.fltk.org/), which is a lightweight GUI library which allows creating small, self-contained and fast gui applications.
-
-[go-mobile](https://github.com/golang/mobile) adds support for mobile platforms (Android and iOS) and provides tools to build mobile applications. (A [Go bindings for OpenGL ES 2.0 and ES 3.0](https://godoc.org/golang.org/x/mobile/gl) is included.)
 
 [go-sfml](https://github.com/teh-cmc/go-sfml) is a Go bindings for [SFML](https://www.sfml-dev.org/).
 
-[GoVCL](https://github.com/ying32/govcl) is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
-
-GTK related:
-* [go-gtk](https://github.com/mattn/go-gtk) is a Go binding for GTK2. * Another one: [gobbi](https://github.com/pekim/gobbi) (including [cairo](https://github.com/pekim/gobbi/tree/master/lib/cairo)).
-* [gotk3](https://github.com/gotk3/gotk3) provides Go bindings for GTK+3 and dependent projects (including [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)).
-* [gotk4](https://github.com/diamondburned/gotk4) is a GTK4 bindings generator for Go.
-* [GXUI](https://github.com/google/gxui) is a Go cross platform UI library.
-* [iup-go](https://github.com/gen2brain/iup-go) is a Go bindings for [IUP](https://www.tecgraf.puc-rio.br/iup/).
-* [nuxui](https://github.com/nuxui/nuxui) is a cross-platform GUI library to make macOS, window, linux, IOS, android applications.
-
-QT related:
-* [miqt](https://github.com/mappu/miqt) is a MIT-licensed Qt bindings for Go.
-* [Qamel](https://github.com/go-qamel/qamel) is a simple QML binding for Go (MIT license)
-* [qt](https://github.com/therecipe/qt) allows you to write Qt applications entirely in Go and makes deploying them later very easy (LGPL license).
-* [qt.go](https://github.com/kitech/qt.go) is a Qt5 binding which uses FFI instead of CGO (LGPL license).
-* [RenderView](https://github.com/TheGrum/renderview) is an easy Go GUI wrapper for interactive manipulation of visual algorithms/backend code. Support go-gtk (default), gotk3 and shiny backends.
-
-SDL related:
-* [go-sdl2](https://github.com/veandco/go-sdl2) is SDL2 wrapped for Go users.
-* [purego-sdl3](https://github.com/JupiterRider/purego-sdl3) is a cgo-free SDL3 binding.
-* [shiny](https://github.com/golang/exp/tree/master/shiny) is a Go cross platform UI package.
-* [Spot](https://github.com/roblillack/spot) is a reactive, cross-platform desktop GUI toolkit.
-* [systray](https://github.com/getlantern/systray) is a cross platfrom Go library to place an icon and menu in the notification area. Tested on Windows 8, Mac OSX, Ubuntu 14.10 and Debian 7.6.
-
-Tcl/Tk related:
-* [gothic](https://github.com/nsf/gothic) is a tcl/tk binding.
-* [tk9.0](https://gitlab.com/cznic/tk9.0) is a CGo-free (use dynamic lib loading instead), cross platform GUI toolkit for Go.
-* [trayhost](https://github.com/shurcooL/trayhost) is a cross-platform Go library to place an icon in the host operating system's taskbar.
-* [ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on my c lib [libui](https://github.com/andlabs/libui).
-* [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) is a simple example on show to create Windows GUI by using the `syscall` package.
-* [Windigo](https://github.com/rodrigocfd/windigo) - Win32 API and GUI in idiomatic Go.
-* [Walk](https://github.com/lxn/walk) is a "Windows Application Library Kit" for the Go Programming Language.
-* [wui](https://github.com/gonutz/wui) is a Windows GUI library that uses [the native Win32 API](https://github.com/gonutz/w32), which is forked from [this one](https://github.com/AllenDang/w32).
-* [XGB](https://github.com/BurntSushi/xgb) is the X Go Binding, which is a low-level API to communicate with the core X protocol and many of the X extensions.
-* [xgbutil](https://github.com/BurntSushi/xgbutil) is a utility library designed to work with the X Go Binding.
-* [zenity](https://github.com/ncruces/zenity) is a cross-platform package providing [Zenity](https://help.gnome.org/users/zenity/stable/)-like dialogs.
+[gamen](https://github.com/rajveermalviya/gamen) is cross-platform GUI window creation and management library in Go.
 
 
 ### HTML based GUI
 
-[Apptron](https://github.com/tractordev/apptron) gives you webview windows and common platform APIs for your simple scripts, homebrew utilities, or full applications.
+[Wails](https://github.com/wailsapp/wails) is a framework for building desktop applications using Go & Web Technologies.
+
+[webview](https://github.com/webview/webview) is a tiny cross-platform webview library for C/C++/Golang to build modern cross-platform GUIs.
 
 [Go-app](https://github.com/maxence-charriere/go-app) is a package for building progressive web apps (PWA) with the Go programming language (Golang) and WebAssembly (Wasm).
 
+[Lorca](https://github.com/zserge/lorca) is a very small library to build modern HTML5 desktop apps in Go. It doesn't bundle Chrome but reuses the installed Chrome on your machine.
+
 [go-astilectron](https://github.com/asticode/go-astilectron) helps use build cross platform GUI apps with GO and HTML/JS/CSS. It is the official GO bindings of astilectron and is powered by Electron.
 
+[Muon](https://github.com/ImVexed/muon) is a lightweight alternative to Electron written in Golang, using [Ultralight](https://ultralig.ht/) instead of Chromium.
+
 [go-sciter](https://github.com/sciter-sdk/go-sciter) is a Golang bindings of Sciter: the Embeddable HTML/CSS/script engine for modern UI development。
+
+[Apptron](https://github.com/tractordev/apptron) gives you webview windows and common platform APIs for your simple scripts, homebrew utilities, or full applications.
 
 [gowd](https://github.com/dtylman/gowd) help us build cross platform GUI apps with GO and HTML/JS/CSS (powered by nwjs)。
 
 [Gowut](https://github.com/icza/gowut) is a Web UI Toolkit written in pure Go. Apps are rendered as HTML pages. It doesn't bundle browsers.
 
-[Lorca](https://github.com/zserge/lorca) is a very small library to build modern HTML5 desktop apps in Go. It doesn't bundle Chrome but reuses the installed Chrome on your machine.
-
-[Muon](https://github.com/ImVexed/muon) is a lightweight alternative to Electron written in Golang, using [Ultralight](https://ultralig.ht/) instead of Chromium.
-
 [Qlovaseed](https://github.com/qlova/seed) is a lightweight alternative to Electron written in Golang. Apps are rendered as HTML pages. It doesn't bundle browsers.
-
-[Wails](https://github.com/wailsapp/wails) is a framework for building desktop applications using Go & Web Technologies.
-
-[webview](https://github.com/webview/webview) is a tiny cross-platform webview library for C/C++/Golang to build modern cross-platform GUIs.
 
 
 ### custom GUI

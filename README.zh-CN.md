@@ -8,84 +8,84 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 
 ### 本机 GUI 和实用程序绑定
 
+Tcl/Tk 相关:
+* [ui](https://github.com/andlabs/ui) 旨在使用 c 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
+* [Walk](https://github.com/lxn/walk) 是 Go 编程的“Windows 应用程序库套件”。
+* [zenity](https://github.com/ncruces/zenity) 是一个跨平台包，提供类似[Zenity](https://help.gnome.org/users/zenity/stable/)的对话框。
+* [Windigo](https://github.com/rodrigocfd/windigo) 采用 Go 编写的 Win32 API 和 GUI。
+* [XGB](https://github.com/BurntSushi/xgb) 是 X 的 Go 绑定，它是用于与核心 X 协议和许多 X 扩展进行通信的低级 API。
+* [trayhost](https://github.com/shurcooL/trayhost) 是一个跨平台的 Go 库，用于在主机操作系统的任务栏中放置图标。
+* [wui](https://github.com/gonutz/wui) 是一个使用 [the native Win32 API](https://github.com/gonutz/w32)的 Windows GUI 库, 它是 [this one](https://github.com/AllenDang/w32)分叉而来的.
+* [xgbutil](https://github.com/BurntSushi/xgbutil) 是一个旨在与[XGB](https://github.com/BurntSushi/xgb)配合使用的实用程序库。
+* [gothic](https://github.com/nsf/gothic) 是 tcl/tk 的 Go 绑定。
+* [tk9.0](https://gitlab.com/cznic/tk9.0) is a CGo-free (use dynamic lib loading instead), cross platform GUI toolkit for Go.
+* [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) 是一个简单的示例，展示了如何使用syscall包创建 Windows GUI。
+
+[go-mobile](https://github.com/golang/mobile) 增加了对移动平台（Android 和 iOS）的支持，并提供了构建移动应用程序的工具。(包括[Go bindings for OpenGL ES 2.0 and ES 3.0](https://godoc.org/golang.org/x/mobile/gl))
+
 [DarwinKit](https://github.com/progrium/darwinkit) (old name: MacDriver) lets you work with Apple frameworks and build native Mac applications using Go.
 
-[dlgs](https://github.com/gen2brain/dlgs) 是一个用于显示对话框和输入框的跨平台库。
+GTK 相关:
+* [GXUI](https://github.com/google/gxui) 是一个 Go 跨平台 UI 库。
+* [go-gtk](https://github.com/mattn/go-gtk) 是 GTK2 的 Go 绑定。
+* [gotk3](https://github.com/gotk3/gotk3) 为 GTK+3 和​​相关项目 (包括 [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)) 提供 Go 绑定。 * 另外一个: [gobbi](https://github.com/pekim/gobbi) (包括 [cairo](https://github.com/pekim/gobbi/tree/master/lib/cairo))。
+* [gotk4](https://github.com/diamondburned/gotk4) 是 Go 的 GTK4 绑定生成器。
+* [nuxui](https://github.com/nuxui/nuxui) 是一个跨平台的 GUI 库，用于制作 macOS、window、linux、IOS、android 应用程序。
+* [iup-go](https://github.com/gen2brain/iup-go) 是 [IUP](https://www.tecgraf.puc-rio.br/iup/)的 Go 绑定
 
-[gamen](https://github.com/rajveermalviya/gamen) 是 Go 语言跨平台的 GUI 窗口创建和管理库。
+SDL 相关:
+* [systray](https://github.com/getlantern/systray) 是一个跨平台的 Go 库，用于在通知区域放置图标和菜单。已在 Windows 8、Mac OSX、Ubuntu 14.10 和 Debian 7.6 上测试。
+* [go-sdl2](https://github.com/veandco/go-sdl2) 是专为 Go 用户包装的 SDL2。
+* [purego-sdl3](https://github.com/JupiterRider/purego-sdl3) is a cgo-free SDL3 binding.
+* [Spot](https://github.com/roblillack/spot) 是一个反应灵敏的跨平台桌面 GUI 工具包。
+* [shiny](https://github.com/golang/exp/tree/master/shiny) 是一个 Go 跨平台 UI 包。
+
+[GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
+
+[glfw](https://github.com/go-gl/glfw) 是 GLFW 3 的 Go 绑定。
+
+QT 相关:
+* [miqt](https://github.com/mappu/miqt) is a MIT-licensed Qt bindings for Go.
+* [qt](https://github.com/therecipe/qt) 允许您完全用 Go 编写 Qt 应用程序，并使以后部署它们变得非常容易。
+* [qt.go](https://github.com/kitech/qt.go) 是 Qt5 绑定，它使用 FFI 而不是 CGO。
+* [Qamel](https://github.com/go-qamel/qamel) is a simple QML binding for Go (MIT license)
+* [RenderView](https://github.com/TheGrum/renderview) 是一个简单的 Go GUI 包装器，用于交互式操作可视化算法/后端代码。支持 go-gtk（默认）、gotk3 和 shiny 后端。
+
+[dlgs](https://github.com/gen2brain/dlgs) 是一个用于显示对话框和输入框的跨平台库。
 
 [gform](https://github.com/AllenDang/gform) 是一个易于使用的 Go Windows GUI 工具包。
 * [winc](https://github.com/tadvi/winc) 是 Windows 上 Go GUI 应用程序的通用库（基于 gform）。
 
-[glfw](https://github.com/go-gl/glfw) 是 GLFW 3 的 Go 绑定。
-
 [go-fltk](https://github.com/pwiecz/go-fltk) 是一个简单的包装器 [FLTK 1.4 library](https://www.fltk.org/), 它是一个轻量级的 GUI 库，允许创建小型、独立且快速的 GUI 应用程序。
-
-[go-mobile](https://github.com/golang/mobile) 增加了对移动平台（Android 和 iOS）的支持，并提供了构建移动应用程序的工具。(包括[Go bindings for OpenGL ES 2.0 and ES 3.0](https://godoc.org/golang.org/x/mobile/gl))
 
 [go-sfml](https://github.com/teh-cmc/go-sfml) 是 [SFML](https://www.sfml-dev.org/)的 Go 绑定。
 
-[GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
-
-GTK 相关:
-* [go-gtk](https://github.com/mattn/go-gtk) 是 GTK2 的 Go 绑定。
-* [gotk3](https://github.com/gotk3/gotk3) 为 GTK+3 和​​相关项目 (包括 [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)) 提供 Go 绑定。 * 另外一个: [gobbi](https://github.com/pekim/gobbi) (包括 [cairo](https://github.com/pekim/gobbi/tree/master/lib/cairo))。
-* [gotk4](https://github.com/diamondburned/gotk4) 是 Go 的 GTK4 绑定生成器。
-* [GXUI](https://github.com/google/gxui) 是一个 Go 跨平台 UI 库。
-* [iup-go](https://github.com/gen2brain/iup-go) 是 [IUP](https://www.tecgraf.puc-rio.br/iup/)的 Go 绑定
-* [nuxui](https://github.com/nuxui/nuxui) 是一个跨平台的 GUI 库，用于制作 macOS、window、linux、IOS、android 应用程序。
-
-QT 相关:
-* [miqt](https://github.com/mappu/miqt) is a MIT-licensed Qt bindings for Go.
-* [Qamel](https://github.com/go-qamel/qamel) is a simple QML binding for Go (MIT license)
-* [qt](https://github.com/therecipe/qt) 允许您完全用 Go 编写 Qt 应用程序，并使以后部署它们变得非常容易。
-* [qt.go](https://github.com/kitech/qt.go) 是 Qt5 绑定，它使用 FFI 而不是 CGO。
-* [RenderView](https://github.com/TheGrum/renderview) 是一个简单的 Go GUI 包装器，用于交互式操作可视化算法/后端代码。支持 go-gtk（默认）、gotk3 和 shiny 后端。
-
-SDL 相关:
-* [go-sdl2](https://github.com/veandco/go-sdl2) 是专为 Go 用户包装的 SDL2。
-* [purego-sdl3](https://github.com/JupiterRider/purego-sdl3) is a cgo-free SDL3 binding.
-* [shiny](https://github.com/golang/exp/tree/master/shiny) 是一个 Go 跨平台 UI 包。
-* [Spot](https://github.com/roblillack/spot) 是一个反应灵敏的跨平台桌面 GUI 工具包。
-* [systray](https://github.com/getlantern/systray) 是一个跨平台的 Go 库，用于在通知区域放置图标和菜单。已在 Windows 8、Mac OSX、Ubuntu 14.10 和 Debian 7.6 上测试。
-
-Tcl/Tk 相关:
-* [gothic](https://github.com/nsf/gothic) 是 tcl/tk 的 Go 绑定。
-* [tk9.0](https://gitlab.com/cznic/tk9.0) is a CGo-free (use dynamic lib loading instead), cross platform GUI toolkit for Go.
-* [trayhost](https://github.com/shurcooL/trayhost) 是一个跨平台的 Go 库，用于在主机操作系统的任务栏中放置图标。
-* [ui](https://github.com/andlabs/ui) 旨在使用 c 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
-* [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) 是一个简单的示例，展示了如何使用syscall包创建 Windows GUI。
-* [Windigo](https://github.com/rodrigocfd/windigo) 采用 Go 编写的 Win32 API 和 GUI。
-* [Walk](https://github.com/lxn/walk) 是 Go 编程的“Windows 应用程序库套件”。
-* [wui](https://github.com/gonutz/wui) 是一个使用 [the native Win32 API](https://github.com/gonutz/w32)的 Windows GUI 库, 它是 [this one](https://github.com/AllenDang/w32)分叉而来的.
-* [XGB](https://github.com/BurntSushi/xgb) 是 X 的 Go 绑定，它是用于与核心 X 协议和许多 X 扩展进行通信的低级 API。
-* [xgbutil](https://github.com/BurntSushi/xgbutil) 是一个旨在与[XGB](https://github.com/BurntSushi/xgb)配合使用的实用程序库。
-* [zenity](https://github.com/ncruces/zenity) 是一个跨平台包，提供类似[Zenity](https://help.gnome.org/users/zenity/stable/)的对话框。
+[gamen](https://github.com/rajveermalviya/gamen) 是 Go 语言跨平台的 GUI 窗口创建和管理库。
 
 
 ### 基于 HTML 的 GUI
 
-[Apptron](https://github.com/tractordev/apptron) gives you webview windows and common platform APIs for your simple scripts, homebrew utilities, or full applications.
+[Wails](https://github.com/wailsapp/wails) 是一个使用 Go 和 Web 技术构建桌面应用程序的框架。
+
+[webview](https://github.com/webview/webview) 是一个小型跨平台 webview 库，用于 C/C++/Golang 构建现代跨平台 GUI。
 
 [Go-app](https://github.com/maxence-charriere/go-app) 是一个使用 Go 编程语言（Golang）和 WebAssembly（Wasm）构建渐进式 Web 应用程序（PWA）的软件包。
 
+[Lorca](https://github.com/zserge/lorca) 是一个非常小的库，用于用 Go 构建现代 HTML5 桌面应用。它不捆绑 Chrome，但会重复使用您机器上已安装的 Chrome。
+
 [go-astilectron](https://github.com/asticode/go-astilectron) 帮助使用 GO 和 HTML/JS/CSS 构建跨平台 GUI 应用程序。它是 astilectron 的官方 GO 绑定，由 Electron 提供支持。
 
+[Muon](https://github.com/ImVexed/muon) 是 Electron 的轻量级替代品，用 Golang 编写，使用[Ultralight](https://ultralig.ht/)而不是 Chromium。
+
 [go-sciter](https://github.com/sciter-sdk/go-sciter) 是 Sciter 的 Golang 绑定：用于现代 UI 开发的可嵌入 HTML/CSS/脚本引擎。
+
+[Apptron](https://github.com/tractordev/apptron) gives you webview windows and common platform APIs for your simple scripts, homebrew utilities, or full applications.
 
 [gowd](https://github.com/dtylman/gowd) 帮助我们使用 GO 和 HTML/JS/CSS (由 nwjs 提供支持) 构建跨平台 GUI 应用程序。
 
 [Gowut](https://github.com/icza/gowut) 是一个纯 Go 编写的 Web UI 工具包。应用程序以 HTML 页面的形式呈现。它不捆绑浏览器。
 
-[Lorca](https://github.com/zserge/lorca) 是一个非常小的库，用于用 Go 构建现代 HTML5 桌面应用。它不捆绑 Chrome，但会重复使用您机器上已安装的 Chrome。
-
-[Muon](https://github.com/ImVexed/muon) 是 Electron 的轻量级替代品，用 Golang 编写，使用[Ultralight](https://ultralig.ht/)而不是 Chromium。
-
 [Qlovaseed](https://github.com/qlova/seed) 是使用 Golang 编写的 Electron 的轻量级替代品。应用程序以 HTML 页面的形式呈现。它不捆绑浏览器。
-
-[Wails](https://github.com/wailsapp/wails) 是一个使用 Go 和 Web 技术构建桌面应用程序的框架。
-
-[webview](https://github.com/webview/webview) 是一个小型跨平台 webview 库，用于 C/C++/Golang 构建现代跨平台 GUI。
 
 
 ### 自定义 GUI
