@@ -1,0 +1,30 @@
+name: Generate READMEs
+
+on:
+  push:
+    paths:
+      - 'meta/projects.yml'
+      - 'cmd/generate/main.go'
+      - '.github/workflows/generate.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.24'
+
+    - name: Generate files
+      run: |
+        go run cmd/generate/main.go
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git diff --exit-code || (git commit -am "Automated README generation" && git push)
