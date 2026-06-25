@@ -167,7 +167,7 @@ The [Gio](https://git.sr.ht/~eliasnaur/gio) 项目包括一个基于 [the Pathfi
 [sdfx](https://github.com/deadsy/sdfx) 是一个用 Go 编写的简单 CAD 包。 [sdf](https://github.com/soypat/sdf)是它的重写版
 
 
-### game development related
+### 游戏开发相关
 
 [ebiten](https://github.com/hajimehoshi/ebiten) 一款非常简单的 Golang 2D 游戏库
 * [ebitenui](https://github.com/ebitenui/ebitenui) 基于 ebiten 的 UI 库

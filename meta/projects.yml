@@ -595,7 +595,7 @@
     type: project
     url: https://github.com/deadsy/sdfx
 - title_en: game development related
-  title_zh: game development related
+  title_zh: 游戏开发相关
   items:
   - desc_en: – A dead simple 2D game library for Golang
     desc_zh: 一款非常简单的 Golang 2D 游戏库

@@ -107,6 +107,9 @@ func main() {
 	if err := yaml.Unmarshal(data, &categories); err != nil {
 		log.Fatalf("Error unmarshaling YAML: %v", err)
 	}
+	if len(categories) == 0 {
+		log.Println("Warning: projects.yml is empty or parsed as empty.")
+	}
 
 	decodeItem := func(m map[string]interface{}) (string, interface{}) {
 		t, _ := m["type"].(string)
