@@ -224,12 +224,14 @@ func main() {
 		os.WriteFile("meta/projects.yml", out, 0644)
 	}
 
-	generateReadme(categories, "en", "README.md")
-	generateReadme(categories, "zh", "README.zh-CN.md")
+	generateReadme(categories, "en", "README.md", "template/README.md.tmpl")
+	generateReadme(categories, "zh", "README.zh-CN.md", "template/README.zh-CN.md.tmpl")
 }
 
-func generateReadme(categories []Category, lang, filename string) {
+func generateReadme(categories []Category, lang, filename, tmplFilename string) {
 	var lines []string
+
+	lines = append(lines, "<!-- BEGIN AUTOMATED SECTION -->")
 
 	for _, cat := range categories {
 		title := cat.TitleEn
@@ -237,7 +239,6 @@ func generateReadme(categories []Category, lang, filename string) {
 			title = cat.TitleZh
 		}
 
-		lines = append(lines, "")
 		lines = append(lines, "### "+title)
 		lines = append(lines, "")
 
@@ -249,19 +250,18 @@ func generateReadme(categories []Category, lang, filename string) {
 			}
 			descStr := ""
 			if desc != "" {
-				// avoid leading spaces logic issues
 				desc = strings.TrimSpace(desc)
 				if lang == "zh" {
 					if strings.HasPrefix(desc, "，") || strings.HasPrefix(desc, "。") || strings.HasPrefix(desc, "（") {
-					    descStr = desc
+						descStr = desc
 					} else {
-					    descStr = " " + desc
+						descStr = " " + desc
 					}
 				} else {
-				    if strings.HasPrefix(desc, ",") {
-					    descStr = desc
+					if strings.HasPrefix(desc, ",") {
+						descStr = desc
 					} else {
-					    descStr = " " + desc
+						descStr = " " + desc
 					}
 				}
 			}
@@ -269,7 +269,6 @@ func generateReadme(categories []Category, lang, filename string) {
 			if isSub {
 				prefix = "* "
 			}
-			// In original file, the bracket is flush with the start
 			lines = append(lines, fmt.Sprintf("%s[%s](%s)%s", prefix, p.Name, p.URL, descStr))
 			if !isSub && len(p.SubProjects) == 0 {
 				lines = append(lines, "")
@@ -312,13 +311,11 @@ func generateReadme(categories []Category, lang, filename string) {
 				if strings.Contains(text, "BTW, if you have interests") || strings.Contains(text, "顺便说一句") {
 					continue
 				}
-				if strings.Contains(text, "<!-- END AUTOMATED SECTION -->") {
+				if strings.Contains(text, "<!-- END AUTOMATED SECTION -->") || strings.Contains(text, "<!-- BEGIN AUTOMATED SECTION -->") {
 					continue
 				}
-
-				// Fix dropping paragraphs by filtering only lines starting with [tcell]
 				if strings.HasPrefix(text, "[tcell]") && strings.Contains(text, "Awesome Go") {
-				    continue
+					continue
 				}
 
 				lines = append(lines, text)
@@ -327,32 +324,17 @@ func generateReadme(categories []Category, lang, filename string) {
 		}
 	}
 
+	lines = append(lines, "<!-- END AUTOMATED SECTION -->")
+
 	automatedContent := strings.TrimSpace(strings.Join(lines, "\n"))
 
-	contentBytes, err := os.ReadFile(filename)
+	tmplBytes, err := os.ReadFile(tmplFilename)
 	if err != nil {
-		log.Fatalf("Error reading %s: %v", filename, err)
+		log.Fatalf("Error reading %s: %v", tmplFilename, err)
 	}
-	content := string(contentBytes)
+	content := string(tmplBytes)
 
-	if strings.Contains(content, "<!-- BEGIN AUTOMATED SECTION -->") {
-		re := regexp.MustCompile(`(?s)<!-- BEGIN AUTOMATED SECTION -->.*?<!-- END AUTOMATED SECTION -->`)
-		content = re.ReplaceAllString(content, "<!-- BEGIN AUTOMATED SECTION -->\n\n"+automatedContent+"\n\n<!-- END AUTOMATED SECTION -->")
-	} else {
-		startIdx := strings.Index(content, "### native GUI")
-		if startIdx == -1 {
-			startIdx = strings.Index(content, "### 本机 GUI")
-		}
-
-		preContent := strings.TrimRight(content[:startIdx], "\n")
-		var postContent string
-		if lang == "en" {
-			postContent = "BTW, if you have interests in developing terminal UI Go programs, please check\n[tcell](https://github.com/gdamore/tcell), [tview](https://github.com/rivo/tview) (which depends on tcell), [cview](https://gitlab.com/tslocum/cview/) (which is [a fork](https://gitlab.com/tslocum/cview/blob/master/FORK.md) of tview), and [more listed on Awesome Go](https://github.com/avelino/awesome-go#advanced-console-uis)."
-		} else {
-			postContent = "顺便说一句，如果您对开发终端 UI Go 程序感兴趣，请查看\n[tcell](https://github.com/gdamore/tcell), [tview](https://github.com/rivo/tview) (依赖于 tcell), [cview](https://gitlab.com/tslocum/cview/) (tview 的一个分支 [a fork](https://gitlab.com/tslocum/cview/blob/master/FORK.md)), 以及[Awesome Go](https://github.com/avelino/awesome-go#advanced-console-uis)上列出的更多内容。"
-		}
-		content = preContent + "\n\n<!-- BEGIN AUTOMATED SECTION -->\n\n" + automatedContent + "\n\n<!-- END AUTOMATED SECTION -->\n\n" + postContent + "\n"
-	}
+	content = strings.Replace(content, "{{CONTENT}}", automatedContent, 1)
 
 	err = os.WriteFile(filename, []byte(content), 0644)
 	if err != nil {
