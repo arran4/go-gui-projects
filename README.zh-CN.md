@@ -70,7 +70,7 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 
 ### UI 抽象层
 
-[ui](https://github.com/andlabs/ui) 旨在使用 c 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
+[ui](https://github.com/andlabs/ui) 旨在使用 C 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
 
 [GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
 

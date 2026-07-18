@@ -77,7 +77,7 @@ core X protocol and many of the X extensions.
 
 ### UI abstraction layers
 
-[ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on my c lib [libui](https://github.com/andlabs/libui).
+[ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on the C library [libui](https://github.com/andlabs/libui).
 
 [GoVCL](https://github.com/ying32/govcl) is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
 
