@@ -24,8 +24,6 @@ _(Please follow [@zigo_101](https://twitter.com/zigo_101) for updates on this pa
 
 [go-sfml](https://github.com/teh-cmc/go-sfml) is a Go bindings for [SFML](https://www.sfml-dev.org/).
 
-[GoVCL](https://github.com/ying32/govcl) is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
-
 GTK related:
 * [go-gtk](https://github.com/mattn/go-gtk) is a Go binding for GTK2.
 * [gotk3](https://github.com/gotk3/gotk3) provides Go bindings for GTK+3 and dependent projects (including [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)).
@@ -62,8 +60,6 @@ Tcl/Tk related:
 
 [trayhost](https://github.com/shurcooL/trayhost) is a cross-platform Go library to place an icon in the host operating system's taskbar.
 
-[ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on my c lib [libui](https://github.com/andlabs/libui).
-
 [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) is a simple example on show to create Windows GUI by using the `syscall` package.
 
 [Windigo](https://github.com/rodrigocfd/windigo) - Win32 API and GUI in idiomatic Go.
@@ -78,6 +74,14 @@ core X protocol and many of the X extensions.
 [xgbutil](https://github.com/BurntSushi/xgbutil) is a utility library designed to work with the X Go Binding.
 
 [zenity](https://github.com/ncruces/zenity) is a cross-platform package providing [Zenity](https://help.gnome.org/users/zenity/stable/)-like dialogs.
+
+### UI abstraction layers
+
+[ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on my c lib [libui](https://github.com/andlabs/libui).
+
+[GoVCL](https://github.com/ying32/govcl) is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
+
+[goey](https://bitbucket.org/rj/goey) provides a declarative, cross-platform GUI for the Go language. The range of controls, their supported properties and events, should roughly match what is available in HTML. However, properties and events may be limited to support portability. Additionally, styling of the controls will be limited, with the look of controls matching the native platform.
 
 ### HTML based GUI
 
@@ -112,8 +116,6 @@ core X protocol and many of the X extensions.
 [Fyne](https://github.com/fyne-io/fyne) is an easy to use UI toolkit and app API written in Go. We use OpenGL (through the go-gl and go-glfw projects) to provide cross platform graphics.
 
 [Gio](https://git.sr.ht/~eliasnaur/gio) implements portable immediate mode GUI programs in Go. Gio programs run on all the major platforms: iOS/tvOS, Android, Linux (Wayland), macOS, Windows and browsers (Webassembly/WebGL).
-
-[goey](https://bitbucket.org/rj/goey) provides a declarative, cross-platform GUI for the Go language. The range of controls, their supported properties and events, should roughly match what is available in HTML. However, properties and events may be limited to support portability. Additionally, styling of the controls will be limited, with the look of controls matching the native platform.
 
 [go-flutter](https://github.com/go-flutter-desktop/go-flutter) is a package that brings Flutter to the desktop.
 

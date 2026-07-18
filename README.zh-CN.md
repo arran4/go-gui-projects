@@ -34,8 +34,6 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 
 [gotk4](https://github.com/diamondburned/gotk4) 是 Go 的 GTK4 绑定生成器。
 
-[GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
-
 [GXUI](https://github.com/google/gxui) 是一个 Go 跨平台 UI 库。
 
 [iup-go](https://github.com/gen2brain/iup-go) 是 [IUP](https://www.tecgraf.puc-rio.br/iup/)的 Go 绑定
@@ -56,8 +54,6 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 
 [trayhost](https://github.com/shurcooL/trayhost) 是一个跨平台的 Go 库，用于在主机操作系统的任务栏中放置图标。
 
-[ui](https://github.com/andlabs/ui) 旨在使用 c 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
-
 [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) 是一个简单的示例，展示了如何使用syscall包创建 Windows GUI。
 
 [Windigo](https://github.com/rodrigocfd/windigo) 采用 Go 编写的 Win32 API 和 GUI。
@@ -71,6 +67,14 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 [xgbutil](https://github.com/BurntSushi/xgbutil) 是一个旨在与[XGB](https://github.com/BurntSushi/xgb)配合使用的实用程序库。
 
 [zenity](https://github.com/ncruces/zenity) 是一个跨平台包，提供类似[Zenity](https://help.gnome.org/users/zenity/stable/)的对话框。
+
+### UI 抽象层
+
+[ui](https://github.com/andlabs/ui) 旨在使用 c 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
+
+[GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
+
+[goey](https://bitbucket.org/rj/goey) 为 Go 语言提供了声明式、跨平台的 GUI。控件的范围及其支持的属性和事件应与 HTML 中提供的大致相同。但是，属性和事件可能会受到限制以支持可移植性。此外，控件的样式将受到限制，控件的外观与本机平台相匹配。
 
 ### 基于 HTML 的 GUI
 
@@ -103,8 +107,6 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 [gi](https://github.com/goki/gi) 是 Go 中基于场景图的 2D 和 3D GUI/图形界面 (Gi)。
 
 [Gio](https://git.sr.ht/~eliasnaur/gio) 使用 Go 语言实现了可移植的立即模式 GUI 程序。Gio 程序可在所有主流平台上运行：iOS/tvOS、Android、Linux (Wayland)、macOS、Windows 和浏览器 (Webassembly/WebGL)。
-
-[goey](https://bitbucket.org/rj/goey) 为 Go 语言提供了声明式、跨平台的 GUI。控件的范围及其支持的属性和事件应与 HTML 中提供的大致相同。但是，属性和事件可能会受到限制以支持可移植性。此外，控件的样式将受到限制，控件的外观与本机平台相匹配。
 
 [go-flutter](https://github.com/go-flutter-desktop/go-flutter) 是一个将 Flutter 应用到桌面的包。
 
