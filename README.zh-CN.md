@@ -6,6 +6,7 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 # Go GUI/图形/图像相关项目列表
 
 ### 本机 GUI 和实用程序绑定
+此类项目直接包装或提供特定于平台的本机工具包或专用本机实用程序 API 的绑定。它们提供底层原生框架的 1:1 或接近 1:1 的映射。
 
 [dlgs](https://github.com/gen2brain/dlgs) 是一个用于显示对话框和输入框的跨平台库。
 
@@ -17,6 +18,8 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 [glfw](https://github.com/go-gl/glfw) 是 GLFW 3 的 Go 绑定。
 
 [go-fltk](https://github.com/pwiecz/go-fltk) 是一个简单的包装器 [FLTK 1.4 library](https://www.fltk.org/), 它是一个轻量级的 GUI 库，允许创建小型、独立且快速的 GUI 应用程序。
+
+[GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
 
 [go-gtk](https://github.com/mattn/go-gtk) 是 GTK2 的 Go 绑定。
 * [RenderView](https://github.com/TheGrum/renderview) 是一个简单的 Go GUI 包装器，用于交互式操作可视化算法/后端代码。支持 go-gtk（默认）、gotk3 和 shiny 后端。
@@ -69,14 +72,14 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 [zenity](https://github.com/ncruces/zenity) 是一个跨平台包，提供类似[Zenity](https://help.gnome.org/users/zenity/stable/)的对话框。
 
 ### UI 抽象层
+此类项目提供了统一的、更高级别的 Go API，它抽象了底层的 UI 实现。它们充当翻译层，通常在底层选择合适的原生或第三方工具包以支持跨平台。
 
 [ui](https://github.com/andlabs/ui) 旨在使用 C 库 [libui](https://github.com/andlabs/libui)，用 Go 提供简单的 GUI 软件开发。
-
-[GoVCL](https://github.com/ying32/govcl) 是一个基于 [liblcl](https://github.com/ying32/liblcl)的本机 GUI 库。
 
 [goey](https://bitbucket.org/rj/goey) 为 Go 语言提供了声明式、跨平台的 GUI。控件的范围及其支持的属性和事件应与 HTML 中提供的大致相同。但是，属性和事件可能会受到限制以支持可移植性。此外，控件的样式将受到限制，控件的外观与本机平台相匹配。
 
 ### 基于 HTML 的 GUI
+利用 Web 技术（HTML/CSS/JS、WebAssembly、WebViews、Electron 替代方案）来呈现用户界面的项目。
 
 [Go-app](https://github.com/maxence-charriere/go-app) 是一个使用 Go 编程语言（Golang）和 WebAssembly（Wasm）构建渐进式 Web 应用程序（PWA）的软件包。
 
@@ -99,6 +102,7 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 [webview](https://github.com/webview/webview) 是一个小型跨平台 webview 库，用于 C/C++/Golang 构建现代跨平台 GUI。
 
 ### 自定义 GUI
+不依赖本机系统工具包或 Web 浏览器进行渲染，而是实现自己的渲染逻辑和组件集（通常使用 OpenGL、Vulkan 或即时模式概念）从头开始绘制 UI 的项目。
 
 [duit](https://github.com/mjl-/duit) 是一个纯 go、跨平台、MIT 许可的开发人员 UI 工具包。
 
