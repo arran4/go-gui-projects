@@ -6,6 +6,7 @@ _(Please follow [@zigo_101](https://twitter.com/zigo_101) for updates on this pa
 # A list of Go GUI/graphics/image related projects
 
 ### native GUI and utility bindings
+Projects in this category directly wrap or provide bindings to specific platform-native toolkits or specialized native utility APIs. They provide a 1:1 or near 1:1 mapping to the underlying native framework.
 
 [DarwinKit](https://github.com/progrium/darwinkit) (old name: MacDriver) lets you work with Apple frameworks and build native Mac applications using Go.
 
@@ -62,8 +63,6 @@ Tcl/Tk related:
 
 [trayhost](https://github.com/shurcooL/trayhost) is a cross-platform Go library to place an icon in the host operating system's taskbar.
 
-[ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on my c lib [libui](https://github.com/andlabs/libui).
-
 [w32.go](https://gist.github.com/nathan-osman/18c2e227ad00a223b61c0b3c16d452c3) is a simple example on show to create Windows GUI by using the `syscall` package.
 
 [Windigo](https://github.com/rodrigocfd/windigo) - Win32 API and GUI in idiomatic Go.
@@ -79,7 +78,15 @@ core X protocol and many of the X extensions.
 
 [zenity](https://github.com/ncruces/zenity) is a cross-platform package providing [Zenity](https://help.gnome.org/users/zenity/stable/)-like dialogs.
 
+### UI abstraction layers
+Projects in this category provide a unified, higher-level Go API that abstracts away the underlying UI implementation. They act as a translation layer, often choosing the appropriate native or third-party toolkit under the hood for cross-platform support.
+
+[ui](https://github.com/andlabs/ui) aims to provide simple GUI software development in Go, based on the C library [libui](https://github.com/andlabs/libui).
+
+[goey](https://bitbucket.org/rj/goey) provides a declarative, cross-platform GUI for the Go language. The range of controls, their supported properties and events, should roughly match what is available in HTML. However, properties and events may be limited to support portability. Additionally, styling of the controls will be limited, with the look of controls matching the native platform.
+
 ### HTML based GUI
+Projects that leverage web technologies (HTML/CSS/JS, WebAssembly, WebViews, Electron alternatives) to render the user interface.
 
 [Apptron](https://github.com/tractordev/apptron) gives you webview windows and common platform APIs for your simple scripts, homebrew utilities, or full applications.
 
@@ -104,6 +111,7 @@ core X protocol and many of the X extensions.
 [webview](https://github.com/webview/webview) is a tiny cross-platform webview library for C/C++/Golang to build modern cross-platform GUIs.
 
 ### custom GUI
+Projects that do not rely on native system toolkits or web browsers for rendering, but instead implement their own rendering logic and widget sets (often using OpenGL, Vulkan, or immediate mode concepts) to draw the UI from scratch.
 
 [Cogent Core](https://github.com/cogentcore/core) is a free and open source framework for building powerful, fast, elegant 2D and 3D apps that run on macOS, Windows, Linux, iOS, Android, and the web.
 
@@ -112,8 +120,6 @@ core X protocol and many of the X extensions.
 [Fyne](https://github.com/fyne-io/fyne) is an easy to use UI toolkit and app API written in Go. We use OpenGL (through the go-gl and go-glfw projects) to provide cross platform graphics.
 
 [Gio](https://git.sr.ht/~eliasnaur/gio) implements portable immediate mode GUI programs in Go. Gio programs run on all the major platforms: iOS/tvOS, Android, Linux (Wayland), macOS, Windows and browsers (Webassembly/WebGL).
-
-[goey](https://bitbucket.org/rj/goey) provides a declarative, cross-platform GUI for the Go language. The range of controls, their supported properties and events, should roughly match what is available in HTML. However, properties and events may be limited to support portability. Additionally, styling of the controls will be limited, with the look of controls matching the native platform.
 
 [go-flutter](https://github.com/go-flutter-desktop/go-flutter) is a package that brings Flutter to the desktop.
 
