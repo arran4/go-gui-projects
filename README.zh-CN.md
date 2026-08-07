@@ -118,6 +118,8 @@ _(请关注 [@zigo_101](https://twitter.com/zigo_101)了解此页面的更新以
 [nk](https://github.com/golang-ui/nuklear) 为 nuklear.h 提供 Go 绑定。
 * 另一个: [nucular](https://github.com/aarzilli/nucular)，它使用 gio 或 shiny 后端而不是 cgo。
 
+[Shirei](https://judi.systems/shirei) 是一个实用的桌面应用程序 GUI 框架，作为原生 Go 程序运行，具有原生后端、Flexbox 布局和强大的文本支持。
+
 [Unison](https://github.com/richardwilkes/unison) 是用于 Go 桌面应用程序的统一图形用户体验工具包。支持 macOS、Windows 和 Linux。Unison 建立在 glfw 之上。Unison 为小部件定义了自己的外观和感觉。这样做是为了在所有支持的平台之间提供尽可能高的一致性。
 
 ### 3D 图形和计算 API 绑定
