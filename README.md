@@ -129,6 +129,8 @@ core X protocol and many of the X extensions.
 [nk](https://github.com/golang-ui/nuklear) provides Go bindings for nuklear.h. 
 * Another one: [nucular](https://github.com/aarzilli/nucular), which uses gio or shiny backend instead of cgo.
 
+[Shirei](https://judi.systems/shirei) is a practical GUI framework for desktop apps as native Go programs, featuring native backends, flexbox layout, and robust text support.
+
 [Unison](https://github.com/richardwilkes/unison) is a unified graphical user experience toolkit for Go desktop applications. macOS, Windows, and Linux are supported. Unison is built upon glfw. Unison defines its own look and feel for widgets. This was done to provide as much consistency as possible between all supported platforms.
 
 ### 3D graphics and computing API bindings
