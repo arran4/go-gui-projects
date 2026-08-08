@@ -196,3 +196,6 @@ The [Gio](https://git.sr.ht/~eliasnaur/gio) 项目包括一个基于 [the Pathfi
 顺便说一句，如果您对开发终端 UI Go 程序感兴趣，请查看
 [tcell](https://github.com/gdamore/tcell), [tview](https://github.com/rivo/tview) (依赖于 tcell), [cview](https://gitlab.com/tslocum/cview/) (tview 的一个分支 [a fork](https://gitlab.com/tslocum/cview/blob/master/FORK.md)), 以及[Awesome Go](https://github.com/avelino/awesome-go#advanced-console-uis)上列出的更多内容。
 
+
+
+_注意: 🇨 表示该项目需要 CGO._

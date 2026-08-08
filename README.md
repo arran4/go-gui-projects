@@ -206,3 +206,6 @@ Please visit [Awesome Go](https://github.com/avelino/awesome-go#images) for more
 
 BTW, if you have interests in developing terminal UI Go programs, please check
 [tcell](https://github.com/gdamore/tcell), [tview](https://github.com/rivo/tview) (which depends on tcell), [cview](https://gitlab.com/tslocum/cview/) (which is [a fork](https://gitlab.com/tslocum/cview/blob/master/FORK.md) of tview), and [more listed on Awesome Go](https://github.com/avelino/awesome-go#advanced-console-uis).
+
+
+_Note: 🇨 indicates the project requires CGO._
