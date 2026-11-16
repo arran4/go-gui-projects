@@ -26,6 +26,8 @@ _(Please follow [@zigo_101](https://twitter.com/zigo_101) for updates on this pa
 
 [GoVCL](https://github.com/ying32/govcl) is a native GUI library based on [liblcl](https://github.com/ying32/liblcl).
 
+[gowt](https://github.com/haiodo/gowt) is a cross-platform native GUI toolkit for Go, based on a port of Eclipse SWT. It uses AppKit, Win32 and GTK 3 widgets without requiring CGO.
+
 GTK related:
 * [go-gtk](https://github.com/mattn/go-gtk) is a Go binding for GTK2.
 * [gotk3](https://github.com/gotk3/gotk3) provides Go bindings for GTK+3 and dependent projects (including [cairo](https://github.com/gotk3/gotk3/tree/master/cairo)).
